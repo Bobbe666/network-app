@@ -101,7 +101,7 @@ CREATE TABLE IF NOT EXISTS events (
 INSERT IGNORE INTO users (email, password_hash, vorname, nachname, role, status)
 VALUES (
   'info@tda-intl.com',
-  '$2a$12$4LH5a4VFkuqmUJm4K1JqCuqhh7UY4mxTyvEBGBn0W7QYOY5J5e.vW',
+  '$2a$12$6qH3UAhi.RRzJWdw0LW3tO.0XKmii6y.LliEruo4MGqKzZWh1s9eu',
   'Admin',
   'TDA',
   'admin',
