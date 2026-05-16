@@ -1,0 +1,48 @@
+.dashboard-wrapper {
+  padding: 40px 24px;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.dashboard-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.dashboard-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dashboard-card-icon {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.dashboard-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.dashboard-card p {
+  font-size: 13px;
+  flex: 1;
+}
+
+.btn.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
