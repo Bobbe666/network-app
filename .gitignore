@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Builds
+frontend/build/
+
+# Env-Dateien (NIEMALS committen!)
+.env
+backend/.env
+*.env.local
+
+# Uploads
+backend/uploads/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/
+.idea/
