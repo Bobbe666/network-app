@@ -60,6 +60,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 // ── Routen ────────────────────────────────────────────────────────────────────
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/admin', require('./routes/admin'));
+app.use('/api/profil', require('./routes/profil'));
 
 // ── Health Check ──────────────────────────────────────────────────────────────
 app.get('/api/health', (req, res) => {

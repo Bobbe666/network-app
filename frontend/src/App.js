@@ -6,6 +6,7 @@ import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import DashboardPage from './pages/DashboardPage';
 import AdminPage from './pages/AdminPage';
+import ProfilPage from './pages/ProfilPage';
 import './styles/design-system.css';
 
 const PrivateRoute = ({ children }) => {
@@ -54,6 +55,9 @@ const App = () => (
         } />
         <Route path="/admin" element={
           <AdminRoute><Layout><AdminPage /></Layout></AdminRoute>
+        } />
+        <Route path="/profil" element={
+          <PrivateRoute><Layout><ProfilPage /></Layout></PrivateRoute>
         } />
         <Route path="/" element={<Navigate to="/dashboard" replace />} />
         <Route path="*" element={<Navigate to="/dashboard" replace />} />
