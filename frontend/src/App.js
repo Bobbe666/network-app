@@ -7,6 +7,9 @@ import RegisterPage from './pages/RegisterPage';
 import DashboardPage from './pages/DashboardPage';
 import AdminPage from './pages/AdminPage';
 import ProfilPage from './pages/ProfilPage';
+import EventsPage from './pages/EventsPage';
+import EventFormPage from './pages/EventFormPage';
+import MeineEventsPage from './pages/MeineEventsPage';
 import './styles/design-system.css';
 
 const PrivateRoute = ({ children }) => {
@@ -58,6 +61,13 @@ const App = () => (
         } />
         <Route path="/profil" element={
           <PrivateRoute><Layout><ProfilPage /></Layout></PrivateRoute>
+        } />
+        <Route path="/events" element={<Layout><EventsPage /></Layout>} />
+        <Route path="/events/neu" element={
+          <PrivateRoute><Layout><EventFormPage /></Layout></PrivateRoute>
+        } />
+        <Route path="/events/meine" element={
+          <PrivateRoute><Layout><MeineEventsPage /></Layout></PrivateRoute>
         } />
         <Route path="/" element={<Navigate to="/dashboard" replace />} />
         <Route path="*" element={<Navigate to="/dashboard" replace />} />

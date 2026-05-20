@@ -22,6 +22,7 @@ const Navbar = () => {
 
         <div className="navbar-links">
           <Link to="/events" className="navbar-link">Events</Link>
+          {user && <Link to="/events/meine" className="navbar-link">Meine Events</Link>}
           <Link to="/dojos" className="navbar-link">Dojos</Link>
           <Link to="/sportler" className="navbar-link">Sportler</Link>
         </div>
